@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.aistartkit"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.aistartkit"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -66,4 +66,17 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //Navigation
+    implementation(libs.androidx.navigation.compose)
+    //Lottie
+    implementation("com.airbnb.android:lottie-compose:6.1.0")
+
+
+    // If you want to additionally use the CameraX View class
+    implementation ("androidx.camera:camera-view:1.4.0-alpha06")
+
+    implementation ("com.github.jose-jhr:Library-CameraX:1.0.8")
+
+
 }
