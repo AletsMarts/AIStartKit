@@ -18,6 +18,7 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
     }
 
     buildTypes {
@@ -38,6 +39,8 @@ android {
     }
     buildFeatures {
         compose = true
+        //viewBinding = true
+        //var binding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -59,6 +62,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -72,11 +76,22 @@ dependencies {
     //Lottie
     implementation("com.airbnb.android:lottie-compose:6.1.0")
 
-
-    // If you want to additionally use the CameraX View class
-    implementation ("androidx.camera:camera-view:1.4.0-alpha06")
-
     implementation ("com.github.jose-jhr:Library-CameraX:1.0.8")
+
+    implementation(kotlin("script-runtime"))
+
+    //Versión camara
+    val cameraxVersion = "1.3.1"
+
+    implementation ("androidx.camera:camera-core:${cameraxVersion}")
+    implementation ("androidx.camera:camera-camera2:${cameraxVersion}")
+    implementation ("androidx.camera:camera-lifecycle:${cameraxVersion}")
+    implementation ("androidx.camera:camera-view:${cameraxVersion}")
+
+    implementation ("androidx.compose.ui:ui:1.4.0-alpha02")
+    implementation ("androidx.compose.ui:ui-tooling-preview:1.4.0-alpha02")
+    implementation ("androidx.activity:activity-compose:1.7.0-alpha01")
+
 
 
 }
