@@ -2,6 +2,7 @@ package com.example.aistartkit.views
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -64,6 +65,7 @@ fun Seleccion(){
 
         Spacer(modifier = Modifier.padding(10.dp))
 
+        Box(modifier = Modifier.padding(8.dp)){
         Column(
             modifier = Modifier
                 //.padding(top = 8.dp, start = 25.dp, end = 25.dp)
@@ -78,9 +80,9 @@ fun Seleccion(){
                     .fillMaxWidth()
                     .height(45.dp)
                     .background(
-                    brush = Brush.linearGradient(
-                        colors = listOf(Color.Black, Color.Blue)
-                    )
+                        brush = Brush.linearGradient(
+                            colors = listOf(Color.Black, Color.Blue)
+                        )
                     ),
                 shape = RoundedCornerShape(40.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = Color.Transparent)
@@ -105,9 +107,10 @@ fun Seleccion(){
             ) {
                 Text(text = "INGENIERÍA SISTEMAS COMPUTACIONALES", textAlign = TextAlign.Center)
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth()
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
             )
 
             ElevatedButton(
@@ -126,9 +129,11 @@ fun Seleccion(){
             ) {
                 Text(text = "INGENIERÍA ELÉCTRICA")
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth())
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
+            )
 
             ElevatedButton(
                 onClick = { /*TODO*/ },
@@ -146,9 +151,11 @@ fun Seleccion(){
             ) {
                 Text(text = "INGENIERÍA ELECTRÓNICA")
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth())
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
+            )
 
             ElevatedButton(
                 onClick = { /*TODO*/ },
@@ -166,9 +173,11 @@ fun Seleccion(){
             ) {
                 Text(text = "INGENIERÍA EN ENERGÍAS RENOVABLES")
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth())
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
+            )
 
             ElevatedButton(
                 onClick = { /*TODO*/ },
@@ -186,9 +195,11 @@ fun Seleccion(){
             ) {
                 Text(text = "INGENIERÍA INDUSTRIAL", textAlign = TextAlign.Center)
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth())
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
+            )
 
             ElevatedButton(
                 onClick = { /*TODO*/ },
@@ -202,14 +213,21 @@ fun Seleccion(){
                         )
                     ),
                 shape = RoundedCornerShape(40.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = Color.Transparent, contentColor = Color.Black)
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Transparent,
+                    contentColor = Color.Black
+                )
             ) {
-                Text(text = "INGENIERÍA MECÁNICA",
-                    style = TextStyle(color = Color.White))
+                Text(
+                    text = "INGENIERÍA MECÁNICA",
+                    style = TextStyle(color = Color.White)
+                )
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth())
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
+            )
 
             ElevatedButton(
                 onClick = { /*TODO*/ },
@@ -227,9 +245,11 @@ fun Seleccion(){
             ) {
                 Text(text = "INGENIERÍA MECATRÓNICA")
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth())
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
+            )
 
             ElevatedButton(
                 onClick = { /*TODO*/ },
@@ -247,9 +267,11 @@ fun Seleccion(){
             ) {
                 Text(text = "INGENIERÍA QUÍMICA")
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth())
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
+            )
 
             ElevatedButton(
                 onClick = { /*TODO*/ },
@@ -267,9 +289,11 @@ fun Seleccion(){
             ) {
                 Text(text = "LICENCIATURA EN ADMINISTRACIÓN")
             }
-            Spacer(modifier = Modifier
-                .padding(horizontal = 10.dp)
-                .fillMaxWidth())
+            Spacer(
+                modifier = Modifier
+                    .padding(horizontal = 10.dp)
+                    .fillMaxWidth()
+            )
 
             ElevatedButton(
                 onClick = { /*TODO*/ },
@@ -286,6 +310,8 @@ fun Seleccion(){
             ) {
                 Text(text = "INGENIERÍA GESTIÓN EMPRESARIAL")
             }
+
+        }
         }
     }
 }
