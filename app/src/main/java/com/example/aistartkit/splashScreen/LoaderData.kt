@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.example.aistartkit.views
+package com.example.aistartkit.splashScreen
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
